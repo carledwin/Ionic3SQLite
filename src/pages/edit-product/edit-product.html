@@ -1,0 +1,33 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Ionic SQLite</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-item>
+    <ion-label stacked>Preço</ion-label>
+    <ion-input type="number" name="price" [(ngModel)]="model.price"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Vencimento</ion-label>
+    <ion-datetime displayFormat="DD/MM/YYYY" name="duedate" min="2019" max="2020-12-31" [(ngModel)]="model.duedate"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>Categoria</ion-label>
+    <ion-select name="category_id" [(ngModel)]="model.category_id">
+        <ion-option *ngFor="let category of categories" value="{{category.id}}">{{ category.name }}</ion-option>
+    </ion-select>
+  </ion-item>
+      
+  <ion-item>
+    <ion-label stacked></ion-label>
+    <ion-input name="active" [(ngModel)]="model.active"></ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="save()">Salvar</button>
+</ion-content>

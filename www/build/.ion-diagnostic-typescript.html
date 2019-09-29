@@ -1,0 +1,81 @@
+<div class="ion-diagnostic">
+<div class="ion-diagnostic-masthead" title="typescript error: 2345">
+<div class="ion-diagnostic-title">Typescript Error</div>
+<div class="ion-diagnostic-message" data-error-code="typescript-2345">Argument of type &#039;{ declarations: (typeof HomePage | typeof MyApp)[]; imports: (ModuleWithProviders | typeof Browse...&#039; is not assignable to parameter of type &#039;NgModule&#039;.
+  Types of property &#039;providers&#039; are incompatible.
+    Type &#039;(typeof SplashScreen | SQLiteOriginal | typeof DatabaseProvider | typeof ProductProvider | { prov...&#039; is not assignable to type &#039;Provider[]&#039;.
+      Type &#039;typeof SplashScreen | SQLiteOriginal | typeof DatabaseProvider | typeof ProductProvider | { provi...&#039; is not assignable to type &#039;Provider&#039;.
+        Type &#039;SQLiteOriginal&#039; is not assignable to type &#039;Provider&#039;.
+          Type &#039;SQLiteOriginal&#039; is not assignable to type &#039;ClassProvider&#039;.
+            Property &#039;provide&#039; is missing in type &#039;SQLiteOriginal&#039;.</div>
+</div>
+<div class="ion-diagnostic-file">
+<div class="ion-diagnostic-file-header" title="/home/carledwin/Documents/Ionic/projetos/Ionic3SQLite/src/app/app.module.ts">src/app/app.module.ts</div>
+<div class="ion-diagnostic-blob">
+<table class="ion-diagnostic-table">
+<tr>
+<td class="ion-diagnostic-blob-num" data-line-number="13"></td>
+<td class="ion-diagnostic-blob-code"></td>
+</tr>
+<tr class="ion-diagnostic-error-line">
+<td class="ion-diagnostic-blob-num" data-line-number="14"></td>
+<td class="ion-diagnostic-blob-code">@NgModule(<span class="ion-diagnostics-error-chr">{</span></td>
+</tr>
+<tr>
+<td class="ion-diagnostic-blob-num" data-line-number="15"></td>
+<td class="ion-diagnostic-blob-code">  declarations: [</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="ion-diagnostic">
+<div class="ion-diagnostic-masthead" title="typescript error: 2554">
+<div class="ion-diagnostic-title">Typescript Error</div>
+<div class="ion-diagnostic-message" data-error-code="typescript-2554">Expected 1-2 arguments, but got 0.</div>
+</div>
+<div class="ion-diagnostic-file">
+<div class="ion-diagnostic-file-header" title="/home/carledwin/Documents/Ionic/projetos/Ionic3SQLite/src/pages/edit-product/edit-product.ts">src/pages/edit-product/edit-product.ts</div>
+<div class="ion-diagnostic-blob">
+<table class="ion-diagnostic-table">
+<tr>
+<td class="ion-diagnostic-blob-num" data-line-number="38"></td>
+<td class="ion-diagnostic-blob-code"></td>
+</tr>
+<tr class="ion-diagnostic-error-line">
+<td class="ion-diagnostic-blob-num" data-line-number="39"></td>
+<td class="ion-diagnostic-blob-code">    <span class="hljs-keyword"><span class="ion-diagnostics-error-chr">t</span><span class="ion-diagnostics-error-chr">h</span><span class="ion-diagnostics-error-chr">i</span><span class="ion-diagnostics-error-chr">s</span></span><span class="ion-diagnostics-error-chr">.</span><span class="ion-diagnostics-error-chr">c</span><span class="ion-diagnostics-error-chr">a</span><span class="ion-diagnostics-error-chr">t</span><span class="ion-diagnostics-error-chr">e</span><span class="ion-diagnostics-error-chr">g</span><span class="ion-diagnostics-error-chr">o</span><span class="ion-diagnostics-error-chr">r</span><span class="ion-diagnostics-error-chr">y</span><span class="ion-diagnostics-error-chr">P</span><span class="ion-diagnostics-error-chr">r</span><span class="ion-diagnostics-error-chr">o</span><span class="ion-diagnostics-error-chr">v</span><span class="ion-diagnostics-error-chr">i</span><span class="ion-diagnostics-error-chr">d</span><span class="ion-diagnostics-error-chr">e</span><span class="ion-diagnostics-error-chr">r</span><span class="ion-diagnostics-error-chr">.</span><span class="ion-diagnostics-error-chr">g</span><span class="ion-diagnostics-error-chr">e</span><span class="ion-diagnostics-error-chr">t</span><span class="ion-diagnostics-error-chr">A</span><span class="ion-diagnostics-error-chr">l</span><span class="ion-diagnostics-error-chr">l</span><span class="ion-diagnostics-error-chr">(</span><span class="ion-diagnostics-error-chr">)</span></td>
+</tr>
+<tr>
+<td class="ion-diagnostic-blob-num" data-line-number="40"></td>
+<td class="ion-diagnostic-blob-code">    .then((result: <span class="hljs-built_in">any</span>[]) =&gt; {</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="ion-diagnostic">
+<div class="ion-diagnostic-masthead" title="typescript error: 2304">
+<div class="ion-diagnostic-title">Typescript Error</div>
+<div class="ion-diagnostic-message" data-error-code="typescript-2304">Cannot find name &#039;SQLite&#039;.</div>
+</div>
+<div class="ion-diagnostic-file">
+<div class="ion-diagnostic-file-header" title="/home/carledwin/Documents/Ionic/projetos/Ionic3SQLite/src/providers/database/database.ts">src/providers/database/database.ts</div>
+<div class="ion-diagnostic-blob">
+<table class="ion-diagnostic-table">
+<tr>
+<td class="ion-diagnostic-blob-num" data-line-number="8"></td>
+<td class="ion-diagnostic-blob-code"></td>
+</tr>
+<tr class="ion-diagnostic-error-line">
+<td class="ion-diagnostic-blob-num" data-line-number="9"></td>
+<td class="ion-diagnostic-blob-code">  <span class="hljs-keyword">constructor</span>(public http: HttpClient, private sQLite: <span class="ion-diagnostics-error-chr">S</span><span class="ion-diagnostics-error-chr">Q</span><span class="ion-diagnostics-error-chr">L</span><span class="ion-diagnostics-error-chr">i</span><span class="ion-diagnostics-error-chr">t</span><span class="ion-diagnostics-error-chr">e</span>) {</td>
+</tr>
+<tr>
+<td class="ion-diagnostic-blob-num" data-line-number="10"></td>
+<td class="ion-diagnostic-blob-code">    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Hello DatabaseProvider Provider'</span>);</td>
+</tr>
+</table>
+</div>
+</div>
+</div>

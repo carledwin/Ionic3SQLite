@@ -1,0 +1,23 @@
+
+ionic start Ionic3SQLite blank --type=ionic-angular
+
+cd Ionic3SQLite/
+
+ionic cordova plugin add cordova-sqlite-storage
+
+sudo npm install --save @ionic-native/sqlite
+
+ionic cordova platform add android
+
+ionic cordova build android
+
+ionic g provider database
+
+ionic g provider product 
+
+ionic g provider category
+
+ionic g page edit-product
+
+
+
